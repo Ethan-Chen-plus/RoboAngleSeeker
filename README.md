@@ -26,11 +26,24 @@ Clone the repository:
 
 Usage examples include detailed command lines for running different DQN models and configurations as presented in the research, facilitating replication of the experiments and further exploration of the algorithms' behaviors in the APS environment.
 
+1. **Default DQN Training**
+   ```bash
+   python main.py --model DQN
+   ```
+
+2. **Double DQN with Custom Parameters**
+   ```bash
+   python main.py --model DoubleDQN --lr 0.005 --num_episodes 300 --epsilon 0.05
+   ```
+
+3. **Dueling DQN with Increased Batch Size and Buffer Size**
+   ```bash
+   python main.py --model DuelingDQN --batch_size 128 --buffer_size 10000
+   ```
+
 ## Experiment and Results
 The benchmark demonstrates the effectiveness and challenges of RL and DRL algorithms in physical settings, as discussed extensively in our paper. Results provide insights into the nuances of algorithm performance across simulated and real environments.
 
-## Contributing
-Contributions are encouraged, particularly those that enhance the existing framework or extend its capabilities. See the `CONTRIBUTING.md` file for more details.
 
 ## Citation
 Please cite our work if it assists in your research:
