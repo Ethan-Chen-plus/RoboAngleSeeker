@@ -3,6 +3,8 @@
 ## Overview
 This repository accompanies the research paper "Precision Angle Seeking in Robots: A Reinforcement Learning Approach in Simulation and Reality." Our study investigates the application of Reinforcement Learning (RL) and Deep Reinforcement Learning (DRL) algorithms for precision angle seeking in robotic control, highlighting the transition from simulations to real-world applications. The "Angular Positioning Seeker (APS)" environment, built on stm32f103 and Raspberry Pi 4B+ platforms, serves as a novel benchmark for assessing RL algorithms under conditions that closely emulate real-world scenarios.
 
+Our website: https://ethan-chen-plus.github.io/RealWorldRLLabs
+
 ## Features
 - Advanced RL and DRL algorithms for precision control of robotic angles.
 - The APS environment, a custom simulation tailored for angle seeking rather than balance.
@@ -41,6 +43,28 @@ Usage examples include detailed command lines for running different DQN models a
    python main.py --model DuelingDQN --batch_size 128 --buffer_size 10000
    ```
 
+## Algorithm Support
+
+Currently supported algorithms are listed in the table below:
+
+| Algorithm       | Supported | Convergence Time |
+|-----------------|-----------|------------------|
+| DQN             | ✅         | 🐇               |
+| Double DQN      | ✅         | 🐇               |
+| Dueling QN      | ✅         | 🐇               |
+| REINFORCE       | ✅         | 🐇               |
+| Actor Critic    | ✅         | 🐢               |
+| TRPO            | ✅         | 🐇               |
+| PPO             | ✅         | 🐢               |
+| DDPG            | ✅         | 🐇               |
+| SAC             | ✅         | 🐇               |
+| Behavior Clone  | ✅         | 🐢               |
+| GAIL            | ✅         | 🐇               |
+| PETS            | ✅         | 🐢               |
+| MBPO            | ✅         | 🐢               |
+
+
+
 ## Experiment and Results
 The benchmark demonstrates the effectiveness and challenges of RL and DRL algorithms in physical settings, as discussed extensively in our paper. Results provide insights into the nuances of algorithm performance across simulated and real environments.
 
@@ -48,9 +72,9 @@ The benchmark demonstrates the effectiveness and challenges of RL and DRL algori
 ## Citation
 Please cite our work if it assists in your research:
 ```
-@inproceedings{chen2024precision,
+@inproceedings{Anonymous,
   title={Precision Angle Seeking in Robots: A Reinforcement Learning Approach in Simulation and Reality},
-  author={Kewei Chen, Shai Li, Mingsheng Shang},
+  author={Anonymous Author(s)},
   year={2024},
   booktitle={Proceedings}
 }
