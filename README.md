@@ -51,7 +51,7 @@ Currently supported algorithms are listed in the table below:
 |-----------------|-----------|------------------|
 | DQN             | ✅         | 🐇               |
 | Double DQN      | ✅         | 🐇               |
-| Dueling QN      | ✅         | 🐇               |
+| Dueling DQN     | ✅         | 🐇               |
 | REINFORCE       | ✅         | 🐇               |
 | Actor Critic    | ✅         | 🐢               |
 | TRPO            | ✅         | 🐇               |
